@@ -1,11 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import { HomePage } from '../home/home';
-import { AddUserPage } from '../add-user/add-user';
-
 /**
- * Generated class for the MuserPage page.
+ * Generated class for the AddUserPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -13,24 +10,16 @@ import { AddUserPage } from '../add-user/add-user';
 
 @IonicPage()
 @Component({
-  selector: 'page-muser',
-  templateUrl: 'muser.html',
+  selector: 'page-add-user',
+  templateUrl: 'add-user.html',
 })
-export class MuserPage {
+export class AddUserPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad MuserPage');
-  }
-
-  oke() {
-    console.log('okokeokoek');
-  }
-
-  toAdd(){
-    this.navCtrl.push(AddUserPage);
+    console.log('ionViewDidLoad AddUserPage');
   }
 
 }
