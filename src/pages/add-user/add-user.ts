@@ -33,4 +33,8 @@ export class AddUserPage {
     toast.present();
   }
 
+  setValue(v){
+    console.log(v);
+  }
+
 }
