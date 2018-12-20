@@ -17,18 +17,33 @@
     <ion-list>
 
         <ion-item>
-          <ion-label>Username</ion-label>
+          <ion-label stacked>Nama</ion-label>
           <ion-input type="text"></ion-input>
+          <ion-input type="hidden"></ion-input>
         </ion-item>
       
         <ion-item>
-          <ion-label>Password</ion-label>
-          <ion-input type="password"></ion-input>
+          <ion-label stacked>Alamat</ion-label>
+          <ion-input type="text"></ion-input>
         </ion-item>
       
       </ion-list>
 
+      <ion-grid>
+          <ion-row>
+              <ion-col>
+                  <button ion-button block color="secondary">1</button>
+              </ion-col>
+              <ion-col>
+                  <button ion-button block color="primary">2</button>
+              </ion-col>
+              <ion-col>
+                  <button ion-button block color="danger">3</button>
+              </ion-col>
+          </ion-row>
+      </ion-grid>
+
     <div padding>
-        <button block>Sign In</button>
+        <button ion-button block color="secondary" (click)="simpan()">Simpan</button>
     </div>
 </ion-content>

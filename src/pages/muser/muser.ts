@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { HomePage } from '../home/home';
 import { AddUserPage } from '../add-user/add-user';
+import { ToastController } from 'ionic-angular';
 
 /**
  * Generated class for the MuserPage page.
@@ -18,7 +19,7 @@ import { AddUserPage } from '../add-user/add-user';
 })
 export class MuserPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public toastCtrl: ToastController) {
   }
 
   ionViewDidLoad() {
