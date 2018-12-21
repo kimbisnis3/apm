@@ -13,12 +13,11 @@
         <ion-item>
             <ion-label stacked>Nama</ion-label>
             <ion-input type="text"></ion-input>
-            <ion-input type="hidden"></ion-input>
         </ion-item>
 
         <ion-item>
             <ion-label stacked>Alamat</ion-label>
-            <ion-input type="text"></ion-input>
+            <ion-input type="text" [(ngModel)] = "input.alamat"></ion-input>
         </ion-item>
 
     </ion-list>
